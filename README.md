@@ -3,7 +3,7 @@ The following is a guide on how to debug .NET Core applications on Cloud Foundry
 
 1. Download the package from the releases page
 2. Publish your app with debug symbols `dotnet publish -f netcoreapp2.0 -r ubuntu.14.04-x64 -c Debug -o publish`
-3. Extract the downloaded zip into your publish folder
+3. Extract the downloaded zip into your `publish\clrdbg` folder
 4. `cf push` the app from publish folder
 5. Create `launch.xml` file as following:
 ```xml
