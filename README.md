@@ -9,13 +9,14 @@ The following is a guide on how to debug .NET Core applications on Cloud Foundry
 ```xml
 <PipeLaunchOptions xmlns="http://schemas.microsoft.com/vstudio/MDDDebuggerOptions/2014"
                    PipePath="cf.exe" 
-                   PipeArguments="ssh debugme -command &quot;~/app/clrdbg/clrdbg --interpreter=mi&quot;"
+                   PipeArguments="ssh YOUR_APP_NAME -command &quot;~/app/clrdbg/clrdbg --interpreter=mi&quot;"
                    TargetArchitecture="x64" 
                    MIMode="clrdbg" 
                    ProcessId="41">
   <LaunchCompleteCommand>None</LaunchCompleteCommand>
 </PipeLaunchOptions>
 ```
+Make sure to adjust PipeArguments
 6. Run the following command and record PID of your app
 ```
 > cf ssh YOUR_APP_NAME --command "ps -d"
