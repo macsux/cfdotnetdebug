@@ -31,4 +31,4 @@ Make sure to adjust PipeArguments
 
 We should now be debugging
 
-*Note*: After you detach, the remote debugger terminates the process which will restart the container.
+:warning: After you detach, the remote debugger terminates the process which will restart the container.
