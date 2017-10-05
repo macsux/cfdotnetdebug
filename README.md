@@ -17,6 +17,7 @@ The following is a guide on how to debug .NET Core applications on Cloud Foundry
 </PipeLaunchOptions>
 ```
 Make sure to adjust PipeArguments
+
 6. Run the following command and record PID of your app
 ```
 > cf ssh YOUR_APP_NAME --command "ps -d"
