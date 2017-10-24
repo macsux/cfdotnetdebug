@@ -1,7 +1,7 @@
 # Debugging .NET apps on Cloud Foundry
 The following is a guide on how to debug .NET Core applications on Cloud Foundry Linux containers from Visual Studio.
 
-1. Download the package from the releases page
+1. Download the package from the [releases page](https://github.com/macsux/cfdotnetdebug/releases)
 2. Publish your app with debug symbols `dotnet publish -f netcoreapp2.0 -r ubuntu.14.04-x64 -c Debug -o publish`
 3. Extract the downloaded zip into your `publish\clrdbg` folder
 4. `cf push` the app from publish folder
