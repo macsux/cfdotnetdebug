@@ -1,4 +1,7 @@
 # Debugging .NET apps on Cloud Foundry
+
+### These instructions are legacy - use the following guide going forward: https://dotnet-cookbook.cfapps.io/core/remote-debug/
+
 The following is a guide on how to debug .NET Core applications on Cloud Foundry Linux containers from Visual Studio.
 
 1. Download the package from the [releases page](https://github.com/macsux/cfdotnetdebug/releases)
